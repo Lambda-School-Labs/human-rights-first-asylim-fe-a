@@ -173,9 +173,9 @@ const AccountPage = props => {
                     value={formValues.email}
                   />
                 </Form.Item>
-                <Form.Item label="avatarUrl">
-                  <Input />
-                </Form.Item>
+                <ImgCrop shape="round">
+                  <Upload className='img-upload'>+ Add image</Upload>
+                </ImgCrop>
               </Form>
             </Modal>
           </div>
