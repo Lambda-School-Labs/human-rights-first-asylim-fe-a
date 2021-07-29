@@ -173,8 +173,13 @@ const AccountPage = props => {
                     value={formValues.email}
                   />
                 </Form.Item>
+                {/* 
+                  ImgCrop and Upload allow a user to upload an image an instantly select the zoom of the image; renders a circular image for the profile
+                  This component works 'as is' in the frontend; the backend has yet to be built for this feature.
+                  We need permissions and access to create a bucket to store said image.
+                */}
                 <ImgCrop shape="round">
-                  <Upload className='img-upload'>+ Add image</Upload>
+                  <Upload className="img-upload">+ Add image</Upload>
                 </ImgCrop>
               </Form>
             </Modal>
